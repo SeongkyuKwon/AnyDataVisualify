@@ -19,6 +19,7 @@ public class AppConfig {
     DataSourceProperties properties;
     DataSource dataSource;
 
+    // postgresql 설정 완료
     @Bean
     DataSource realDataSource() throws URISyntaxException {
         String url;
