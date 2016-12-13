@@ -7,3 +7,4 @@ personal project
 Any Data Visualization
 
 ## Member
+Kwon Seongkyu / Park yongjin / yang heungyoung
