@@ -27,16 +27,21 @@ public class AppConfig {
         String password;
 
         String databaseUrl = System.getenv("DATABASE_URL");
+        System.out.println("+++++++++++++++++++++++ : " + databaseUrl);
         if (databaseUrl != null) {
             URI dbUri = new URI(databaseUrl);
             url = "jdbc:postgresql://" + dbUri.getHost() + ":" + dbUri.getPort() + dbUri.getPath();
             username = dbUri.getUserInfo().split(":")[0];
             password = dbUri.getUserInfo().split(":")[1];
         } else {
-            url = this.properties.getUrl();
-            username = this.properties.getUsername();
-            password = this.properties.getPassword();
+            url = "jdbc:postgresql://localhost:5432/yhs-tranfer"; 
+            username = "postgres";
+            password = "admin";
+//            url = this.properties.getUrl();
+//            username = this.properties.getUsername();
+//            password = this.properties.getPassword();
         }
+        System.out.println("+++++++++++++++++++++++ : " + url+username);
 
         DataSourceBuilder factory = DataSourceBuilder
                 .create(this.properties.getClassLoader())

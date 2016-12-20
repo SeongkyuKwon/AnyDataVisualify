@@ -7,14 +7,15 @@ spring:
     ## (2)
     profiles: dev
     datasource:
-      driverClassName: org.h2.Driver
-      url: jdbc:h2:file:/tmp/customers;MODE=PostgreSQL
-      username: sa
-      password:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/yhs-tranfer
+      username: postgres
+      password: admin
     jpa:
-      database: H2
+      database: POSTGRESQL
       hibernate:
-        ddl-auto: create-drop
+        ddl-auto: update
+
 ---
 spring:
     ## (3)
@@ -24,7 +25,8 @@ spring:
     jpa:
       database: POSTGRESQL
       hibernate:
-        ddl-auto: create-drop
+        ##ddl-auto: create-drop
+        ddl-auto: update
         
         
 spring.thymeleaf.cache: false   

@@ -13,8 +13,10 @@ import javax.persistence.*;
 @Table(name = "customers")
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="idseq")
+    @SequenceGenerator(name="idseq", sequenceName="seq_id", allocationSize= 1)
     private Integer id;
+    
     private String firstName;
     private String lastName;
 }

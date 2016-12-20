@@ -35,7 +35,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("com.h2database:h2")
-    compile("postgresql:postgresql:9.0-801.jdbc4")
+    compile("postgresql:postgresql:9.4-1201-jdbc41")
     provided("org.projectlombok:lombok:1.16.4")
     compile("org.lazyluke:log4jdbc-remix:0.2.7")
     testCompile("org.springframework.boot:spring-boot-starter-test")
