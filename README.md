@@ -35,6 +35,8 @@ Kwon Seongkyu / Park Yongjin / Yang Heungyoung
 # Graphite
 
 ## 서비스
+ 1. Postgersql 설정 수정 
+ 2. ID 값 시퀀스 적용 
 
 
 
