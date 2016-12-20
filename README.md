@@ -1,4 +1,4 @@
-# herokuProject 소개
+# Any Data Visualify 소개
 
 personal project
 
@@ -12,14 +12,37 @@ Kwon Seongkyu / Park Yongjin / Yang Heungyoung
 
 ## What We Will Do
 
-1. Github 형상에 소스 반영
+### Git Vocab
 
-```
-git commit FILE_NAME.js -m "comment here" ==> (내부의 STAGE로 올라감) ==> git push ==> (Github 저장소로 반영됨)
-```
+> git status
 
-2. Github으로 부터 업데이트 받기
+수정된 파일 목록을 보여줌
 
-```
-git pull
-```
+> git add -A
+
+내부의 STAGING 단계로 올라감
+
+> git commit FILE_NAME.js -m "comment here"
+
+> git push origin master
+
+> git pull origin master
+
+> git fetch
+
+------
+
+# Graphite
+
+## 서비스
+
+
+
+## 구성
+
+
+
+## 문제점
+
+- 사용자들이 늘어감에 따라 성능 저하 문제를 겪기 시작
+- 웹 서버 로그 검토 결과, 렌더링 요청이 많은 것
