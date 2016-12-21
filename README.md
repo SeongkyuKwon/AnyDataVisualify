@@ -49,3 +49,5 @@ Kwon Seongkyu / Park Yongjin / Yang Heungyoung
 - 사용자들이 늘어감에 따라 성능 저하 문제를 겪기 시작
 - 웹 서버 로그 검토 결과, 렌더링 요청이 많은 것
 - test log
+
+-다시 commit
