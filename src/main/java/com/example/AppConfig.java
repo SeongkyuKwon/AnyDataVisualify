@@ -8,10 +8,14 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
+import org.springframework.web.filter.CharacterEncodingFilter;
 
 import javax.sql.DataSource;
 import java.net.URI;
 import java.net.URISyntaxException;
+
 
 @Configuration
 public class AppConfig {
@@ -43,6 +47,7 @@ public class AppConfig {
         }
         System.out.println("+++++++++++++++++++++++ : " + url+username);
 
+
         DataSourceBuilder factory = DataSourceBuilder
                 .create(this.properties.getClassLoader())
                 .url(url)
@@ -51,10 +56,22 @@ public class AppConfig {
         this.dataSource = factory.build();
         return this.dataSource;
     }
+  
 
     @Bean
     @Primary
     DataSource dataSource() {
         return new Log4jdbcProxyDataSource(this.dataSource);
     }
+    
+    @Order(Ordered.HIGHEST_PRECEDENCE)
+    @Bean
+    CharacterEncodingFilter characterEncodingFilter() {
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        filter.setForceEncoding(true);
+        return filter;
+    }
 }
+
+

@@ -40,6 +40,14 @@
             <version>9.4-1201-jdbc41</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity3</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
             <version>3.3.4</version>
@@ -79,6 +87,9 @@
                         <version>1.2.3.RELEASE</version>
                     </dependency>
                 </dependencies>
+                <configuration>
+                    <mainClass>com.example.App</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
