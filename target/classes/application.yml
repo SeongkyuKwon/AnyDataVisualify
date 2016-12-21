@@ -29,6 +29,6 @@ spring:
       database: POSTGRESQL
       hibernate:
         ##ddl-auto: create-drop
-        ddl-auto: update
+        ddl-auto: create-drop
         
     
