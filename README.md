@@ -41,7 +41,7 @@ Kwon Seongkyu / Park Yongjin / Yang Heungyoung
 
 
 ## 구성
-
+ - 명칭변경 : herokuProject -> AnyDataVisulify
 
 
 ## 문제점
