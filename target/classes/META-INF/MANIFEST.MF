@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: hajiboot-rest
+Implementation-Title: AnyDataVisulify
 Implementation-Version: 1.0.0-SNAPSHOT
 Built-By: SeongKyu
 Implementation-Vendor-Id: com.example
