@@ -1,11 +1,12 @@
 spring:
-  profle:
-    ## (1)
-    active: dev
+  profiles:
+    active: prd
+
 ---
+
 spring:
     ## (2)
-    profiles: dev
+    profiles: prd
     datasource:
       driverClassName: org.postgresql.Driver
       url: jdbc:postgresql://localhost:5432/yhs-tranfer
@@ -17,7 +18,7 @@ spring:
         ddl-auto: update
     thymeleaf:
     cache: false
-        
+
 security.basic.enabled: false
 ---
 spring:
@@ -29,6 +30,6 @@ spring:
       database: POSTGRESQL
       hibernate:
         ##ddl-auto: create-drop
-        ddl-auto: create-drop
+        ddl-auto: update
         
     
