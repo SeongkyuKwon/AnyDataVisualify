@@ -32,19 +32,7 @@ Kwon Seongkyu / Park Yongjin / Yang Heungyoung
 
 ------
 
-# Graphite
+# 참고사이트
 
-## 서비스
- 1. Postgersql 설정 수정 
- 2. ID 값 시퀀스 적용 
-
-
-
-## 구성
- - 명칭변경 : herokuProject -> AnyDataVisulify
-
-
-## 문제점
-
-- 사용자들이 늘어감에 따라 성능 저하 문제를 겪기 시작
-- 웹 서버 로그 검토 결과, 렌더링 요청이 많은 것
+- Graphite https://graphiteapp.org
+- TIBCO Spotfire http://spotfire.tibco.com
