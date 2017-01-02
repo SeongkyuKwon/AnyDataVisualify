@@ -1,0 +1,33 @@
+gi<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <style media="screen">
+        /* CSS */
+    </style>
+    </head>
+    <body>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        // 자바스크립트
+        var body = d3.select("body");
+        body.append("div")
+              .attr("id", "header")
+            .append("p")
+              .text("Is this a circle?");
+        body.append("svg")
+              .attr("width", "500px")
+              .attr("height", "40px")
+            .append("circle")
+              .attr("r","20")
+              .attr("cx","20")
+              .attr("cy","20");
+        body.append("div")
+              .attr("class","footer")
+            .append("p")
+              .text("Yeah, looks like it")
+
+    </script>
+    </body>
+</html>
