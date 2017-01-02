@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+        body {
+            font-family: Helvetica;
+        }
+
+        svg {
+            width: 500px;
+            height: 500px;
+        }
+
+        .top-label {
+            font-size: 13px;
+            font-style: italic;
+            text-transform: uppercase;
+            float: left;
+        }
+
+        .age-label {
+            text-align: right;
+            font-weight: bold;
+            width: 90px;
+            padding-right: 10px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .bar {
+            fill: DarkSlateBlue;
+        }
+
+        .bar-label {
+            text-anchor: end;
+        }
+
+        .axis-label {
+            text-anchor: middle;
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript">
+    // javascript here
+    var body = d3.select("body");
+
+    body.append("h2")
+            .text("Age distribution of the world, 2010");
+    body.append("div")
+            .attr("class", "top-label age-label")
+        .append("p")
+            .text("age group");
+    body.append("div")
+            .attr("class", "top-label")
+        .append("p")
+            .text("portion of the population");
+    body.append("div")
+            .attr("class", "clearfix");
+
+    var popData = [1.6, 1.5, 2.1, 2.6, 3.4, 4.5, 5.1, 6.0, 6.6, 7.1, 7.3, 8.1, 8.9, 8.8, 8.6, 8.8, 9.3];
+    var width = 400,
+        scaleFactor = width / popData[16];
+</script>
+</body>
+
+</html>
