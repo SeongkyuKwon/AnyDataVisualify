@@ -36,3 +36,26 @@ Kwon Seongkyu / Park Yongjin / Yang Heungyoung
 
 - Graphite https://graphiteapp.org
 - TIBCO Spotfire http://spotfire.tibco.com
+
+
+
+-----
+
+``` css
+background-color: rgba(251, 251, 251, 0.85);
+```
+
+``` html
+<form id="signup" class="form-inline" action="https://www.lily.camera/wp-content/themes/lily/libs/mcapi-simple-subscribe-jquery/" method="get">
+              <fieldset>
+                <span id="response"> </span>
+                <div class="input-group_">
+                  <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Email">
+                  <div class="input-addon">
+                    <input type="submit" class="btn btn-primary" name="submit" value="SUBSCRIBE" alt="Join">
+                  </div>
+                  <div id="no-spam" class="hidden">We'll never spam or give this address away</div>
+                </div>
+              </fieldset>
+            </form>
+```
